@@ -45,7 +45,7 @@ class FootballFactory extends Factory
         ];
         return [
             'sport_id'=>1,
-            'team'=>$this->,
+            'team'=>,
             'team_id'=>$this->faker->unique(),
             'league_id'=>1,
             'points'=>$this->faker->randomFloat(0, 0, 40),
