@@ -43,16 +43,18 @@ class FootballFactory extends Factory
             'West Ham United',
             'Wolverhampton Wanderers'
         ];
-        return [
+        foreach($teamnames as $teamname){
+            return[
+            'team'=>$teamname,
             'sport_id'=>1,
-            'team'=>,
-            'team_id'=>$this->faker->unique(),
             'league_id'=>1,
+            'team_id'=>$this->faker->randomFloat(0, 1000, 4000),
             'points'=>$this->faker->randomFloat(0, 0, 40),
             'wins'=>$this->faker->randomFloat(0, 0, 20),
-            'loses'=>$this->faker->randomFloat(0, 0, 20),
+            'losses'=>$this->faker->randomFloat(0, 0, 20),
             'draws'=>$this->faker->randomFloat(0, 0, 20),
             'gd'=>$this->faker->randomFloat(0, 0, 20),
-        ];
+            ];
+            }
     }
 }
