@@ -13,6 +13,6 @@ class BetsSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }

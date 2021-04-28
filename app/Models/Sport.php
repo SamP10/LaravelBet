@@ -12,11 +12,9 @@ class Sport extends Model
     protected $table = 'sports';
 
     protected $fillable = [
-        'match',
-        'match_id'
+        'match_id',
+        'away_team',
+        'home_team'
     ];
 
-    protected $hidden = [
-        'sport_id'
-    ];
 }

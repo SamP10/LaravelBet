@@ -16,7 +16,6 @@ class CreateGametypesTable extends Migration
         Schema::create('gametypes', function (Blueprint $table) {
             $table->id();
             $table->string('game_type');
-            $table->integer('game_type_id');
             $table->timestamps();
         });
     }

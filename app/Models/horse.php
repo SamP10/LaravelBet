@@ -16,6 +16,9 @@ class horse extends Model
         'jockey',
         'age',
         'wins',
+    ];
+
+    protected $hidden=[
         'sport_id'
     ];
 }

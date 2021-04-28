@@ -13,6 +13,5 @@ class Gametype extends Model
 
     protected $fillable = [
         'game_type',
-        'game_type_id'
     ];
 }

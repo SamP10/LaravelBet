@@ -14,7 +14,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this -> call([
-           FootballSeeder::class
+           FootballSeeder::class,
+            HorseSeeder::class,
+            GametypeSeeder::class,
+            GameSeeder::class,
+            SportSeeder::class,
+            TableSeeder::class
         ]);
     }
 }

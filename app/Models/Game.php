@@ -21,4 +21,8 @@ class Game extends Model
     protected $hidden = [
         'game_type'
     ];
+
+    public function game_type(){
+        return $this->belongsTo(Gametype::class);
+    }
 }
