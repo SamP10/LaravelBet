@@ -1,0 +1,141 @@
+html{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(152deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 47%, rgba(0,0,0,1) 100%) no-repeat;
+    height: 100%;
+}
+body{
+    width:100%;
+    padding: 0;
+    background: linear-gradient(152deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 47%, rgba(0,0,0,1) 100%) no-repeat;
+    background-size: 100%;
+}
+.container{
+    width: 280px;
+    margin: 5px 0px 5px 10px;
+    height: 100%;
+    padding: 40px 20px 40px 20px;
+    display: inline-block;
+    background-color: #00641b;
+    border: 10px black ;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 90%;
+}
+
+.container img{
+    width: 80%;
+    height: 160px;
+    margin: 0 auto;
+}
+.container select{
+    background-color: #006d24;
+}
+.nav-item{
+    display: inline-block;
+    margin: 20px 40px 10px 5px;
+}
+.nav-bar{
+    margin: 0px 0px 20px 0px;
+    border-bottom: #d4d4d4 4px solid;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+input{
+    background-color: #008a37;
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px 100px 10px 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.container input{
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+}
+
+#editCreate{
+    padding-right: 300px;
+    width: 400px;
+}
+
+#editCreate select{
+    background-color: #005b1a;
+    padding: 3px 7px 3px 7px;
+    border: 1px;
+    border-radius: 4px;
+}
+
+#update{
+    float: left;
+}
+
+.container button{
+    float: right;
+    background-color: #09be03;
+    border: 1px;
+    border-radius: 5px;
+    padding: 4px 6px 4px 6px;
+    margin-top: 5px;
+}
+
+button:hover{
+    background-color: #00de37;
+}
+#editCreate form{
+     width: 300px;
+ }
+
+.nav-bar input,
+.nav-bar button{
+    float: right;
+}
+
+table{
+    background-color: #038c26;
+    opacity: 85%;
+    margin-left: 15px;
+    width: 1000px;
+    }
+
+th, td{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    border: 2px solid #0fe200;
+    border-radius:20px;
+    text-align: center;
+    width: 10%;
+}
+
+td img{
+    margin: 0 auto;
+    width: 40%
+}
+
+.alert-danger{
+    color: Red;
+
+}
+
+footer{
+    color: white;
+    margin-top: 80px;
+    background-color: #888a85;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    opacity: 90%;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.page-wrapper{
+    position: relative;
+    min-height: 100vh;
+}
