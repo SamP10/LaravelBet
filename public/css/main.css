@@ -2,22 +2,21 @@ html{
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    background: linear-gradient(152deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 47%, rgba(0,0,0,1) 100%) no-repeat;
+    background: linear-gradient(152deg, rgb(255, 255, 255) 0%, rgb(255, 140, 0) 47%, rgb(255, 255, 255) 100%) no-repeat;
     height: 100%;
 }
 body{
     width:100%;
     padding: 0;
-    background: linear-gradient(152deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 47%, rgba(0,0,0,1) 100%) no-repeat;
+    background: linear-gradient(152deg, rgb(255, 255, 255) 0%, rgb(255, 140, 0) 47%, rgb(255, 255, 255) 100%) no-repeat;
     background-size: 100%;
 }
 .container{
     width: 280px;
     margin: 5px 0px 5px 10px;
-    height: 100%;
-    padding: 40px 20px 40px 20px;
+    padding: 30px 20px 30px 20px;
     display: inline-block;
-    background-color: #00641b;
+    background-color: #297a00;
     border: 10px black ;
     border-radius: 5px;
     color: #ffffff;
@@ -25,17 +24,28 @@ body{
     opacity: 90%;
 }
 
-.container img{
-    width: 80%;
-    height: 160px;
-    margin: 0 auto;
-}
 .container select{
     background-color: #006d24;
 }
 .nav-item{
     display: inline-block;
-    margin: 20px 40px 10px 5px;
+    margin: 20px 10px 10px 10px;
+}
+
+.nav-item a{
+    background-color: #bb860f;
+    border: #353534;
+    border-radius: 5px;
+    text-decoration: none;
+    margin:0px;
+    color: white;
+    font-size: 20px;
+    padding: 0px 5px 0px 5px;
+}
+
+.nav-item a:hover{
+    background-color: #bb9f1c;
+    color: #07ff00;
 }
 .nav-bar{
     margin: 0px 0px 20px 0px;
@@ -59,22 +69,6 @@ input{
     color: white;
 }
 
-#editCreate{
-    padding-right: 300px;
-    width: 400px;
-}
-
-#editCreate select{
-    background-color: #005b1a;
-    padding: 3px 7px 3px 7px;
-    border: 1px;
-    border-radius: 4px;
-}
-
-#update{
-    float: left;
-}
-
 .container button{
     float: right;
     background-color: #09be03;
@@ -87,10 +81,6 @@ input{
 button:hover{
     background-color: #00de37;
 }
-#editCreate form{
-     width: 300px;
- }
-
 .nav-bar input,
 .nav-bar button{
     float: right;
@@ -138,4 +128,12 @@ footer{
 .page-wrapper{
     position: relative;
     min-height: 100vh;
+}
+
+svg{
+    width: 10px;
+}
+
+strong{
+    font-size: 30px;
 }

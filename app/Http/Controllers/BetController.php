@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Game;
+use App\Models\Table;
+use App\Models\Sport;
+use App\Models\horse;
+use App\Models\football;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -14,12 +18,30 @@ class BetController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function game(Request $request)
     {
-        $games = Game::latest()->paginate (5);
+        $games = Game::latest()->paginate (12);
         return view('gaming.index', compact('games'));
     }
-
+    public function betting(Request $request)
+    {
+        return view('betting.index');
+    }
+    public function casino(Request $request)
+    {
+        $tables = Table::latest()->paginate (12);
+        return view('casino.index', compact('tables'));
+    }
+    public function horse(Request $request)
+    {
+        $horses = horse::latest()->paginate (12);
+        return view('betting.horse', compact('horses'));
+    }
+    public function league(Request $request)
+    {
+        $leagues = football::latest()->paginate (20);
+        return view('betting.football', compact('leagues'));
+    }
     /**
      * Show the form for creating a new resource.
      *

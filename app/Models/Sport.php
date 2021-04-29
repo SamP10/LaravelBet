@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,5 +17,12 @@ class Sport extends Model
         'away_team',
         'home_team'
     ];
+
+    public function away_team(){
+        return $this -> belongsTo(football::class, 'team');
+    }
+    public function home_team(){
+        return $this -> belongsTo(football::class, 'team');
+    }
 
 }

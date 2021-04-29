@@ -19,10 +19,14 @@ class football extends Model
         'wins',
         'draws',
         'losses',
-        'gd'
+        'gd',
+        'img_name'
     ];
 
     protected $hidden =[
         'sport_id'
         ];
+    public function team(){
+        return $this -> hasMany(Sport::class);
+    }
 }

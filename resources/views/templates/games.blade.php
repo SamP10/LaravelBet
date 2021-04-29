@@ -10,3 +10,6 @@
 @elseif($game->game_id==3)
     <b>INSTANT-WIN</b>
 @endif
+<form action="/game/{{$game->id}}" method="GET">
+    <button type=submit class="select-game">PLAY</button>
+</form>

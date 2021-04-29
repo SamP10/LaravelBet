@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
     <!-- Style Sheet -->
@@ -11,16 +12,22 @@
             <h2 class="nav-item"><a href="/">Home</a></h2>
             <h2 class="nav-item"><a href="/myaccount">My Account</a></h2>
             <h2 class="nav-item"><a href="/mybets">My Bets</a></h2>
-            <h2 class="nav-item"><a href="/gaming">Gaming</a></h2>
+            <h2 class="nav-item"><a href="/game">Gaming</a></h2>
             <h2 class="nav-item"><a href="/betting">Betting</a></h2>
             <h2 class="nav-item"><a href="/casino">Casino</a></h2>
             <h2 class="nav-item"><a href="/contact">Contact</a></h2>
 
                 <h2 class="nav-item"><a href="/contactstaff">Contact Staff</a></h2>
                 <h2 class="nav-item"><a href="/betadmin">Betadmin</a></h2>
-                <h2 class="nav-item"><a href="/promotions">Casino</a></h2>
+                <h2 class="nav-item"><a href="/promotions">Promos</a></h2>
 
-</div>
-</div>
+    </div>
+
     @yield('gaming')
+    @yield('casino')
+    @yield('betting')
+    @yield('sports')
+    @yield('horse')
+</div>
 </body>
+</html>

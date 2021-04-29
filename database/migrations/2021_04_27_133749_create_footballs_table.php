@@ -24,6 +24,7 @@ class CreateFootballsTable extends Migration
             $table->integer('draws');
             $table->integer('losses');
             $table->integer('gd');
+            $table->string('img_name');
             $table->timestamps();
         });
     }
