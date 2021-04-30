@@ -42,6 +42,15 @@ class BetController extends Controller
         $leagues = football::latest()->paginate (20);
         return view('betting.football', compact('leagues'));
     }
+    public function index(){
+        return view('homepage');
+    }
+    public function contact(){
+        return view('contact');
+    }
+    public function promotions(){
+        return view('promotions');
+    }
     /**
      * Show the form for creating a new resource.
      *

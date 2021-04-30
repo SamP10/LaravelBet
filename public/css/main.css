@@ -137,3 +137,10 @@ svg{
 strong{
     font-size: 30px;
 }
+
+#advert{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    float: right;
+}

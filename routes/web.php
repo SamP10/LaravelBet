@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BetController::class, 'index'])->name('index');
+Route::get('/contact', [BetController::class, 'contact'])->name('contact');
+Route::get('/promotions', [BetController::class, 'promotions'])->name('promotions');
 Route::get('/game', [BetController::class, 'game'])->name('game-index');
 Route::get('/betting', [BetController::class, 'betting'])->name('bet-index');
 Route::get('/casino', [BetController::class, 'casino'])->name('table-index');
