@@ -110,7 +110,7 @@ phpinfo();
 Navigate to the ip address to display the php infomation
 
 
-##Adding this website
+## Adding this website
 
 First we need to install GIT to pull the repository
 
