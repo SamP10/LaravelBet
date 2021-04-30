@@ -133,7 +133,7 @@ C:\user\> cd destination/LaravelBet
 C:\user\destination\LaravelBet> composer create-project
 ```
 After running the above, changing the .env file to match the details of your database, following the .env.example for default purposes should suffice.
-Establishing a connection to the database server will allow migration and seeding of the database. The database server must be running to poulate the database.
+Establishing a connection to the database server will allow migration and seeding of the database. The database server must be running to populate the database.
 ```
 C:\user\destination\LaravelBet> php artisan migrate:fresh --seed
 ```
