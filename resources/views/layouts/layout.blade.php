@@ -39,6 +39,7 @@
     @yield('horse')
     @yield('contact')
     @yield('promotions')
+    @yield('matches')
 </div>
 </body>
 </html>

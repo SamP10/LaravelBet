@@ -14,6 +14,6 @@ class SportSeeder extends Seeder
      */
     public function run()
     {
-        Sport::factory() -> times (25) ->create();
+        Sport::factory() -> times (50) ->create();
     }
 }

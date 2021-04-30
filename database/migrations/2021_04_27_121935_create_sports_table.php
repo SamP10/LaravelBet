@@ -16,8 +16,10 @@ class CreateSportsTable extends Migration
         Schema::create('sports', function (Blueprint $table) {
             $table->id();
             $table->integer('match_id');
-            $table->integer('away_team');
-            $table->integer('home_team');
+            $table->string('away_team');
+            $table->string('home_team');
+            $table->string('home_odds');
+            $table->string('away_odds');
             $table->timestamps();
         });
     }

@@ -25,8 +25,10 @@ class SportFactory extends Factory
         $sport_team = football::all();
         return [
             'match_id'=>$this->faker->randomFloat(0, 10000, 99999),
-            'away_team'=>$sport_team->random()->team_id,
-            'home_team'=>$sport_team->random()->team_id
+            'away_team'=>$sport_team->random()->team,
+            'home_team'=>$sport_team->random()->team,
+            'home_odds'=>$this->faker->randomFloat(0, 1, 5)."/".$this->faker->randomFloat(0, 1, 100),
+            'away_odds'=>$this->faker->randomFloat(0, 1, 5)."/".$this->faker->randomFloat(0, 1, 100),
         ];
     }
 }

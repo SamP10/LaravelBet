@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             GametypeSeeder::class,
             GameSeeder::class,
             SportSeeder::class,
-            TableSeeder::class
+            TableSeeder::class,
+            userSeeder::class
         ]);
     }
 }

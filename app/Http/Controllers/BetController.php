@@ -51,6 +51,10 @@ class BetController extends Controller
     public function promotions(){
         return view('promotions');
     }
+    public function matches(){
+        $matches = Sport::latest()->paginate(10);
+        return view('betting.matches', compact('matches'));
+    }
     /**
      * Show the form for creating a new resource.
      *
