@@ -5,7 +5,7 @@ The site should be secure as it is built using laravel which offers inbuilt secu
 This website intends to be part of a wider security penetration testing on a docker business environment.
 ## DISCLAIMER
 This is an incomplete web application that should be further developed with other functionalities such as betting slips.
-This application is for academic and educational purpose only.
+This application is for academic and educational purposes.
 However, the website can serve as a template for those looking to develop a betting website.
 
 ## Getting Started
