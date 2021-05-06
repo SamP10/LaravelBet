@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\horse;
+use App\Models\Horse;
 use Illuminate\Database\Seeder;
 
 class HorseSeeder extends Seeder
